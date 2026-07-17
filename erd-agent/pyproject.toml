@@ -1,0 +1,20 @@
+[project]
+name = "erd-agent"
+version = "0.2.0"
+description = "LangGraph agent that analyzes a Git repository and generates Mermaid ERD markdown."
+requires-python = ">=3.10"
+dependencies = [
+  "langgraph>=0.2.0",
+  "typer>=0.12.0",
+  "rich>=13.0.0",
+  "gitpython>=3.1.0",
+  "pydantic>=2.0.0",
+  "langchain-openai>=0.1.0"
+]
+
+[project.scripts]
+erd-agent = "erd_agent.cli:app"
+
+[build-system]
+requires = ["setuptools>=68.0.0", "wheel"]
+build-backend = "setuptools.build_meta"

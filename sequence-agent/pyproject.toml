@@ -1,0 +1,20 @@
+[project]
+name = "sequence-agent"
+version = "0.1.0"
+description = "LangGraph agent that converts a Git repository into a Mermaid sequence diagram Markdown document."
+requires-python = ">=3.10"
+dependencies = [
+    "langgraph>=0.2.0",
+    "langchain-openai>=0.2.0",
+    "python-dotenv>=1.0.1",
+    "GitPython>=3.1.43",
+    "typer>=0.12.5",
+    "rich>=13.7.1",
+]
+
+[project.scripts]
+sequence-agent = "sequence_agent.cli:app"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"

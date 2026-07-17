@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+.work/
+outputs/
+
+# 환경 변수 (API 키 포함)
+.env
+
+# Node.js
+node_modules/
+dist/
+.cache/
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
