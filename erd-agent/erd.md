@@ -1,38 +1,42 @@
 # Repository
 
-https://github.com/94-c/study_spring-boot-react-blog.git
+https://github.com/hojunnnnn/board.git
 
 ## Entity Summary
 
-- `Group`: 8 fields
-- `User`: 3 fields
-- `Event`: 4 fields
+- `Posts`: 7 fields
+- `User`: 6 fields
+- `Comment`: 6 fields
 
 ## Mermaid ERD
 ```mermaid
 erDiagram
-    Group {
+    Posts {
         long id PK
-        string name
-        string address
-        string city
-        string state_or_province
-        string country
-        string postal_code
+        string title
+        string content
+        string writer
+        int view
         long user_id FK
+        string comments
     }
     User {
-        string id PK
-        string name
-        string email
-    }
-    Event {
         long id PK
-        string date
-        string title
-        string description
+        string username
+        string nickname
+        string password
+        string email
+        string role
     }
-    Group }o--|| User : user
-    Group ||--o{ Event : events
-    Event ||--|| User : attendees
+    Comment {
+        long id PK
+        string comment
+        string created_date
+        string modified_date
+        long posts_id FK
+        long user_id FK
+    }
+    Posts }o--|| User : user
+    Comment }o--|| Posts : posts
+    Comment }o--|| User : user
 ```
