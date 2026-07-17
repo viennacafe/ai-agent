@@ -21,25 +21,6 @@ flowchart LR
     G --> H[Markdown + Mermaid files]
 ```
 
-## 실행
-
-```bash
-cp .env.example .env
-# .env에 OPENAI_API_KEY 입력
-
-uv venv
-
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
-pip install -e .
-```
-
-한 종류만 만들 수도 있습니다.
-
-```bash
-diagrams generate <git-url> --diagram erd
-diagrams generate <git-url> --diagram sequence
-```
-
 ## OpenAI API 키 설정
 
 ```bash
