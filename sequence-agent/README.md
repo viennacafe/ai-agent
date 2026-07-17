@@ -41,13 +41,13 @@ uv pip install -e .
 
 ```bash
 # 게시판 예제
-sequence-agent https://github.com/hojunnnnn/board.git --output erd.md
+sequence-agent https://github.com/hojunnnnn/board.git --output output.md
 ```
 
 ## 실행 예제 2)
 ```bash
 # 블로그 예제
-sequence-agent https://github.com/94-c/study_spring-boot-react-blog.git --output erd.md
+sequence-agent https://github.com/94-c/study_spring-boot-react-blog.git --output output.md
 ```
 
 ## 출력 예시
